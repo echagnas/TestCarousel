@@ -13,7 +13,7 @@ import android.widget.FrameLayout
 
 class ScaleFrameLayout : FrameLayout {
 
-    var scale: Float = 0.5F
+    var scale: Float = 1.0F
 
     constructor(context: Context) : super(context) {}
 

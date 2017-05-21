@@ -9,8 +9,8 @@ import android.util.AttributeSet
  */
 class CarouselViewPager : ViewPager{
 
-    var pageWith = 0.6F
-    var paddingBetweenItem = 8
+    var pageWith = 0.1F
+    var paddingBetweenItem = 30
 
     constructor (context: Context) : super(context)
 

@@ -12,8 +12,16 @@ import android.support.v4.app.FragmentStatePagerAdapter
 class FragmentColorPagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     var colors = ArrayList<Int>()
+    val BIG_SCALE = 1.0f
+    val SMALL_SCALE = 0.9f
+    var scale: Float = SMALL_SCALE
 
     override fun getItem(position: Int): Fragment? {
+        if (position == 0) {
+            scale = BIG_SCALE;
+        } else {
+            scale = SMALL_SCALE;
+        }
         val colorFragment = ColorFragment()
 
         val bundle = Bundle()
