@@ -34,7 +34,7 @@ class ColorFragment : Fragment() {
         Runnable {
             var carousel = activity.findViewById(R.id.viewPager) as CarouselViewPager
             var width = viewGroup.width
-            var paddingWidth = (width * 1 - carousel.pageWith).toInt()
+            var paddingWidth = width * ((1 - carousel.pageWith)/2).toInt()
             viewGroup.setPadding(paddingWidth, 0, paddingWidth, 0)
             carousel.pageMargin = -(paddingWidth - carousel.paddingBetweenItem ) * 2
         }.run()
