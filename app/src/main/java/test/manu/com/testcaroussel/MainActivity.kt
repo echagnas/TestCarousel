@@ -26,8 +26,6 @@ class MainActivity : AppCompatActivity() {
         adapter.setColorList(list)
 
         viewPager.adapter = adapter
-        viewPager.pageWith = 0.55f
-        viewPager.paddingBetweenItem = 16
-
+        viewPager.setPageTransformer(true, ScalePageTransformer())
     }
 }
